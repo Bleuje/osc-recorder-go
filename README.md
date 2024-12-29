@@ -2,11 +2,15 @@
 
 `go build -o osc-recorder`
 
+`go build -o osc-replayer replayer.go`
+
 ### Run
 
 example:
 
 `./osc-recorder --address=127.0.0.1 --port=8000 --file=recordings.json --scheme=basic --repeaters=8001,8002 --quantized`
+
+`./osc-replayer --file recordings.json --address 127.0.0.1 --port 8000 --speed 1.0`
 
 ### Options
 
