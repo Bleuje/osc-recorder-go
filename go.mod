@@ -1,4 +1,4 @@
-module github.com/yourusername/osc-recorder-go
+module github.com/Bleuje/osc-recorder-go
 
 go 1.22.2
 
