@@ -1,3 +1,9 @@
+## osc recorder/replayer in Go
+
+Doing what this python repo was doing: https://github.com/Bubobubobubobubo/smol-osc-recorder
+
+And adding a replayer of the recorded jsons.
+
 ### Build
 
 `go build -o osc-recorder`
@@ -20,3 +26,7 @@ example:
 - --scheme (required): Specify a specific schema.
 - --repeaters: Comma-separated list of ports to forward the received messages to. If not specified, no forwarding will occur.
 - --quantized: Quantize the recording so that the first message starts at time 0.
+
+### Dependency
+
+Uses https://github.com/hypebeast/go-osc
