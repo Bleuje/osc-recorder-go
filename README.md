@@ -1,8 +1,8 @@
 ## osc recorder/replayer in Go
 
-Doing what this python repo was doing: https://github.com/Bubobubobubobubo/smol-osc-recorder
+Tool to record osc messages into a json, also has a replayer of recorded jsons.
 
-And adding a replayer of the recorded jsons.
+The recording part is doing what this python repo was doing: https://github.com/Bubobubobubobubo/smol-osc-recorder
 
 ### Build
 
