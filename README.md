@@ -27,6 +27,18 @@ example:
 - --repeaters: Comma-separated list of ports to forward the received messages to. If not specified, no forwarding will occur.
 - --quantized: Quantize the recording so that the first message starts at time 0.
 
+## Schemes
+
+Schemes define how the OSC messages are processed and recorded. You can specify a scheme using the `--scheme` option. The available schemes are:
+
+- `dirt_basic`: A basic schema for recording OSC messages, taking the first element of the args.
+- `dirt_strip`: Returns only odd arguments from the args.
+- `basic`: A basic schema for recording OSC messages, including all arguments.
+- `only_numbers`: Returns only numerical arguments (integers and floats) from the args.
+
+Each scheme is defined as a function that processes the OSC message's address and arguments, returning a dictionary with the processed data. You can extend or modify these schemes by editing the `ALL_SCHEMES` dictionary in the code.
+
+
 ### Dependency
 
 Uses https://github.com/hypebeast/go-osc
