@@ -27,7 +27,7 @@ example:
 - --repeaters: Comma-separated list of ports to forward the received messages to. If not specified, no forwarding will occur.
 - --quantized: Quantize the recording so that the first message starts at time 0.
 
-## Schemes
+### Schemes
 
 Schemes define how the OSC messages are processed and recorded. You can specify a scheme using the `--scheme` option. The available schemes are:
 
